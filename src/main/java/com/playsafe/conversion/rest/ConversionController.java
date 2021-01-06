@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("${app.conversions.endpoint}")
 public class ConversionController {
   @PostMapping("ktoc")
-  public ResponseEntity<?> ktoc(@RequestBody Double kelvin) {
+  public ResponseEntity<?> ktoc(@RequestBody(required=false) Double kelvin) {
     if (kelvin == null) {
       return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Kelvin value is required.");
     }
@@ -20,7 +20,7 @@ public class ConversionController {
   }
 
   @PostMapping("ctok")
-  public ResponseEntity<?> ctok(@RequestBody Double celcius) {
+  public ResponseEntity<?> ctok(@RequestBody(required=false) Double celcius) {
     if (celcius == null) {
       return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("celcius value is required.");
     }
@@ -29,7 +29,7 @@ public class ConversionController {
   }
 
   @PostMapping("mtok")
-  public ResponseEntity<?> mtok(@RequestBody Double miles) {
+  public ResponseEntity<?> mtok(@RequestBody(required=false) Double miles) {
     if (miles == null) {
       return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Miles value is required.");
     }
@@ -38,11 +38,11 @@ public class ConversionController {
   }
 
   @PostMapping("ktom")
-  public ResponseEntity<?> ktom(@RequestBody Double kilometers) {
+  public ResponseEntity<?> ktom(@RequestBody(required = false) Double kilometers) {
     if (kilometers == null) {
       return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Kilometers value is required.");
     }
-    double miles = kilometers + 273.15;
+    double miles = kilometers / 1.609;
     return ResponseEntity.ok(miles);
   }
 }
