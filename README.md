@@ -4,7 +4,7 @@ Required software
 Java JDK 8+
 Maven 3+
 
-** Run instructions
+**Run instructions
 
 *Go to root folder (with pom.xml) open your favourite editor, and run: 
 `mvn clean install`
