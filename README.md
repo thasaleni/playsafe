@@ -1,4 +1,3 @@
-![](RackMultipart20210106-4-jfmkna_html_706d426ee9906800.png)
 # Installation Instructions
 
 Required software
@@ -6,10 +5,18 @@ Java JDK 8+
 Maven 3+
 
 **Run instructions
-*Go to root folder (with pom.xml) open your favourite editor, and run: mvn clean install
-> jar will be generated and put in %project_root%\target\conversion-0.0.1-SNAPSHOT.jar
-*to run the roulette game run: java -cp target\conversion-0.0.1-SNAPSHOT.jar com.playsafe.consoleroulette.ConsoleRoulette
-![]()
+** Terminal Roulette
+- Go to root folder (with pom.xml) open your favourite editor, and run: 
+`mvn clean install`
+>jar will be generated and put in %project_root%\target\conversion-0.0.1-SNAPSHOT.jar
+
+
+- to run the roulette game run: 
+
+`java -cp target\conversion-0.0.1-SNAPSHOT.jar com.playsafe.consoleroulette.ConsoleRoulette`
+
+![](https://github.com/thasaleni/playsafe/blob/main/src/main/resources/terminal1.PNG?raw=true)
+
 # Java Developer
 
 Game Studio Java Developer
