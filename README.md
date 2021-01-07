@@ -4,9 +4,9 @@ Required software
 Java JDK 8+
 Maven 3+
 
-**Run instructions
+**Run instructions**
 
-**Terminal Roulette
+**Terminal Roulette**
 - Go to root folder (with pom.xml) open your favourite editor, and run: 
 `mvn clean install`
 >jar will be generated and put in %project_root%\target\conversion-0.0.1-SNAPSHOT.jar
@@ -18,7 +18,7 @@ Maven 3+
 
 ![](https://github.com/thasaleni/playsafe/blob/main/src/main/resources/terminal1.PNG?raw=true)
 
-**Conversions
+**Conversions**
 - Go to root folder (with pom.xml) open your favourite editor, and run: 
 `mvn clean install`
 >jar will be generated and put in %project_root%\target\conversion-0.0.1-SNAPSHOT.jar
