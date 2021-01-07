@@ -27,7 +27,7 @@ Maven 3+
 
 `java -jar target\conversion-0.0.1-SNAPSHOT.jar`
 
-![](https://github.com/thasaleni/playsafe/blob/main/src/main/resources/terminal1.PNG?raw=true)
+![](https://github.com/thasaleni/playsafe/blob/main/src/main/resources/terminal2.PNG?raw=true)
 
 endpoints will be served at http://localhost:8080/conversions/{endpointname}
 
